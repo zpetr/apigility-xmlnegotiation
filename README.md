@@ -15,7 +15,7 @@ Necessary infrastructure to handle XML with ZF Apigility with HAL structure.
 
 Response type is based on *Accept* header :
 
-- request that specifies **application/xml** (or **application/\*+xml**) get the content in HTML
+- request that specifies **application/xml** (or **application/\*+xml**) get the content in XML
 - **application/hal+json** (or **application/\*+json**) request get the content in HalJson as usual. 
 
 ### Installation
