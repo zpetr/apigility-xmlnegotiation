@@ -1,0 +1,37 @@
+{
+    "name": "zpetr/apigility-xmlnegotiation",
+    "type": "library",
+    "description": "Apigility XML Negotiation module",
+    "keywords" : [
+		"api",
+		"apigility",
+		"module",
+		"zf2",
+		"xml",
+		"negotiation"
+	],
+    "homepage": "https://github.com/zpetr/apigility-xmlnegotiation",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Petr Glushchenko",
+            "email": "petr.glu@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.3.23",
+		"zfcampus/zf-apigility" : "~1.0",
+		"zendframework/zendframework" : "~2.3",
+		"zfcampus/zf-content-negotiation": "~1.0",
+		"zfcampus/zf-hal": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "zPetr\\ApigilityXml\\": "src/"
+        },
+        "classmap": [
+            "Module.php"
+        ]
+    }
+}
