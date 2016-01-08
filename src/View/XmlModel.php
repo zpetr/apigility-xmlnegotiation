@@ -122,7 +122,9 @@ class XmlModel extends ViewModel
         
         if($payload instanceof Collection){
             $object = $payload->getCollection();
-            $output = array('type'=>'collection','data'=>$object->getCurrentItems(),'pages'=>$object->getPages());
+            $data = is_array($object) ? $object:$object->getCurrentItems();
+            $pages = is_array($object) ? array():$object->getPages();
+            $output = array('type'=>'collection','data'=>$data,'pages'=>$pages);
         }
         else if($payload instanceof Entity){
             $object = $payload->entity;
