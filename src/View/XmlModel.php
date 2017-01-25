@@ -129,6 +129,8 @@ class XmlModel extends ViewModel
         else if($payload instanceof Entity){
             $object = $payload->entity;
             $output = array('type'=>'entity','data'=>$object);
+        } else if (is_array($payload)) {
+            $output = ArrayUtils::iteratorToArray($payload);
         }
                
         $serializer = new XmlSerializer();
