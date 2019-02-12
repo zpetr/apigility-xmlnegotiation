@@ -28,7 +28,7 @@ Define dependencies in your composer.json file
 ```json
 {
     "require": {
-        "zpetr/apigility-xmlnegotiation" : "dev-master"
+        "zpetr/apigility-xmlnegotiation" : "1.*"
     }
 }
 ```
@@ -42,7 +42,7 @@ or update it
     php composer.phar update
 
 ### Usage
-- Add *zPetr\ApigilityXml* to modules.config.php:
+- Add *zPetr\ApigilityXml* to config/modules.config.php:
 ```php
 	return array(
     	...,
