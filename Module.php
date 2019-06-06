@@ -87,6 +87,6 @@ class Module
     	$events              = $view->getEventManager();
 
         // Attach strategy, which is a listener aggregate, at high priority
-        $view->getEventManager()->attach($services->get('zPetr\ApigilityXml\XmlStrategy'), 100);
+        $services->get('zPetr\ApigilityXml\XmlStrategy')->attach($events,100);
     }
 }

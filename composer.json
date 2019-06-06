@@ -21,7 +21,8 @@
     ],
     "require": {
         "php" : ">=5.3.23",
-        "zfcampus/zf-apigility" : "^1.4"
+        "zfcampus/zf-apigility" : "^1.4",
+		"zendframework/zend-serializer" : "^2.9",
     },
     "autoload": {
         "psr-4": {
