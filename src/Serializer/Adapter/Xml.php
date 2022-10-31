@@ -3,9 +3,9 @@ namespace zPetr\ApigilityXml\Serializer\Adapter;
 
 use DOMDocument;
 use SimpleXMLElement;
-use Zend\Json\Json;
-use Zend\Serializer\Exception;
-use Zend\Serializer\Adapter\AbstractAdapter;
+use Laminas\Json\Json;
+use Laminas\Serializer\Exception;
+use Laminas\Serializer\Adapter\AbstractAdapter;
 
 class Xml extends AbstractAdapter
 {

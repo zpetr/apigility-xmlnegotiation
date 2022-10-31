@@ -1,7 +1,7 @@
 <?php
 namespace zPetr\ApigilityXml\Serializer\Adapter;
 
-use Zend\Serializer\Adapter\AdapterOptions;
+use Laminas\Serializer\Adapter\AdapterOptions;
 
 class XmlOptions extends AdapterOptions
 {
